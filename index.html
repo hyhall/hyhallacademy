@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hyhall Academy: cursos online para aprender tecnología, diseño y negocios a tu ritmo.">
+  <title>Hyhall Academy | Aprende sin límites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-inner" aria-label="Navegación principal">
+      <a href="#inicio" class="logo">
+        <span class="logo-mark">H</span>
+        <span>Hyhall<strong>Academy</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#cursos" class="nav-link">Cursos</a></li>
+        <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#cursos" class="btn btn-primary btn-sm">Empieza ya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de presentación -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="badge">🚀 Nueva temporada de cursos 2026</span>
+          <h1>Aprende las habilidades del <span class="gradient-text">futuro</span>, hoy.</h1>
+          <p>En Hyhall Academy te acompañamos con cursos prácticos impartidos por expertos de la industria. Aprende a tu ritmo, desde cualquier lugar y con proyectos reales.</p>
+          <div class="hero-actions">
+            <a href="#cursos" class="btn btn-primary">Explorar cursos</a>
+            <a href="#beneficios" class="btn btn-ghost">Saber más</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong data-count="12000">0</strong><span>Estudiantes</span></li>
+            <li><strong data-count="45">0</strong><span>Cursos</span></li>
+            <li><strong data-count="98">0</strong><span>% Satisfacción</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="floating-card card-a">
+            <span class="fc-icon">💻</span>
+            <div><strong>Desarrollo Web</strong><small>Lección 4 de 12</small></div>
+          </div>
+          <div class="floating-card card-b">
+            <span class="fc-icon">🏆</span>
+            <div><strong>¡Certificado obtenido!</strong><small>Diseño UX/UI</small></div>
+          </div>
+          <div class="floating-card card-c">
+            <span class="fc-icon">⭐</span>
+            <div><strong>4.9 / 5</strong><small>Valoración media</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lista de cursos -->
+    <section class="section" id="cursos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestros cursos</h2>
+          <p>Elige tu camino y empieza a aprender hoy mismo.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filtrar cursos por categoría">
+          <button class="filter-btn active" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-btn" data-filter="programacion" role="tab" aria-selected="false">Programación</button>
+          <button class="filter-btn" data-filter="diseno" role="tab" aria-selected="false">Diseño</button>
+          <button class="filter-btn" data-filter="negocios" role="tab" aria-selected="false">Negocios</button>
+          <button class="filter-btn" data-filter="datos" role="tab" aria-selected="false">Datos</button>
+        </div>
+
+        <!-- Las tarjetas se generan desde js/main.js -->
+        <div class="courses-grid" id="coursesGrid"></div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="section section-alt" id="beneficios">
+      <div class="container">
+        <div class="section-header">
+          <h2>¿Por qué Hyhall Academy?</h2>
+          <p>Todo lo que necesitas para crecer profesionalmente.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature reveal">
+            <span class="feature-icon">🎓</span>
+            <h3>Instructores expertos</h3>
+            <p>Profesionales en activo que comparten lo que realmente funciona.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-icon">⏱️</span>
+            <h3>A tu ritmo</h3>
+            <p>Acceso de por vida al contenido para aprender cuando quieras.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-icon">🛠️</span>
+            <h3>Proyectos reales</h3>
+            <p>Construye un portafolio con casos prácticos desde el primer día.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-icon">📜</span>
+            <h3>Certificados</h3>
+            <p>Obtén un certificado al completar cada curso para destacar tu perfil.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Llamada a la acción -->
+    <section class="section cta" id="contacto">
+      <div class="container cta-inner">
+        <h2>¿Listo para dar el siguiente paso?</h2>
+        <p>Suscríbete y recibe novedades y descuentos exclusivos.</p>
+        <form class="cta-form" id="newsletterForm" novalidate>
+          <label for="email" class="sr-only">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+          <button type="submit" class="btn btn-light">Suscribirme</button>
+        </form>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="logo">
+        <span class="logo-mark">H</span>
+        <span>Hyhall<strong>Academy</strong></span>
+      </a>
+      <p>&copy; <span id="year"></span> Hyhall Academy. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
